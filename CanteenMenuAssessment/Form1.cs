@@ -36,5 +36,15 @@ namespace CanteenMenuAssessment
         {
 
         }
+
+        private void grpBoxInterval_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void grpBoxLunch_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
