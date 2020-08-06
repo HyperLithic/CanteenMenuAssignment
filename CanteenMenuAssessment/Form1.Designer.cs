@@ -69,27 +69,27 @@
             this.btnMinusSandwichBacon = new System.Windows.Forms.Button();
             this.btnMinusSandwichHam = new System.Windows.Forms.Button();
             this.btnMinusSandwichBeef = new System.Windows.Forms.Button();
+            this.btnPlusCheeseRoll = new System.Windows.Forms.Button();
             this.btnMinusCheesePuff = new System.Windows.Forms.Button();
+            this.btnPlusSavouryPinwheel = new System.Windows.Forms.Button();
             this.btnMinusBrownie = new System.Windows.Forms.Button();
+            this.btnPlusMuffinSavoury = new System.Windows.Forms.Button();
             this.btnMinusCinnamonSwirl = new System.Windows.Forms.Button();
+            this.btnPlusMuffinSweet = new System.Windows.Forms.Button();
             this.btnMinusMuffinSweet = new System.Windows.Forms.Button();
+            this.btnPlusCinnamonSwirl = new System.Windows.Forms.Button();
             this.btnMinusMuffinSavoury = new System.Windows.Forms.Button();
+            this.btnPlusBrownie = new System.Windows.Forms.Button();
             this.btnMinusSavouryPinwheel = new System.Windows.Forms.Button();
+            this.btnPlusCheesePuff = new System.Windows.Forms.Button();
             this.btnMinusCheeseRoll = new System.Windows.Forms.Button();
+            this.btnPlusSandwichBeef = new System.Windows.Forms.Button();
             this.btnPlusBagelTomato = new System.Windows.Forms.Button();
+            this.btnPlusSandwichHam = new System.Windows.Forms.Button();
             this.btnPlusBagelSalmon = new System.Windows.Forms.Button();
+            this.btnPlusSandwichBacon = new System.Windows.Forms.Button();
             this.btnPlusSandwichChicken = new System.Windows.Forms.Button();
             this.btnPlusSandwichEgg = new System.Windows.Forms.Button();
-            this.btnPlusSandwichBacon = new System.Windows.Forms.Button();
-            this.btnPlusSandwichHam = new System.Windows.Forms.Button();
-            this.btnPlusSandwichBeef = new System.Windows.Forms.Button();
-            this.btnPlusCheesePuff = new System.Windows.Forms.Button();
-            this.btnPlusBrownie = new System.Windows.Forms.Button();
-            this.btnPlusCinnamonSwirl = new System.Windows.Forms.Button();
-            this.btnPlusMuffinSweet = new System.Windows.Forms.Button();
-            this.btnPlusMuffinSavoury = new System.Windows.Forms.Button();
-            this.btnPlusSavouryPinwheel = new System.Windows.Forms.Button();
-            this.btnPlusCheeseRoll = new System.Windows.Forms.Button();
             this.grpBoxLunch = new System.Windows.Forms.GroupBox();
             this.btnMinusWeek1FriedRice = new System.Windows.Forms.Button();
             this.btnPlusWeek1FriedRice = new System.Windows.Forms.Button();
@@ -112,6 +112,10 @@
             this.label45 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnMinusWeek2BeefBurger = new System.Windows.Forms.Button();
+            this.btnPlusWeek2BeefBurger = new System.Windows.Forms.Button();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
             this.btnMinusWeek2ChickenBurger = new System.Windows.Forms.Button();
             this.btnMinusWeek2Meatballs = new System.Windows.Forms.Button();
             this.btnMinusWeek2Lasagne = new System.Windows.Forms.Button();
@@ -132,22 +136,18 @@
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.listLunchWeekList = new System.Windows.Forms.ComboBox();
             this.btnInterval = new System.Windows.Forms.Button();
-            this.label32 = new System.Windows.Forms.Label();
-            this.btnMinusWeek2BeefBurger = new System.Windows.Forms.Button();
-            this.btnPlusWeek2BeefBurger = new System.Windows.Forms.Button();
-            this.label33 = new System.Windows.Forms.Label();
             this.pnlInterval = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.pnlLunchWeek1 = new System.Windows.Forms.Panel();
+            this.pnlLunchWeek2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.picBox1)).BeginInit();
             this.grpBoxInterval.SuspendLayout();
             this.grpBoxLunch.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.pnlInterval.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.pnlLunchWeek1.SuspendLayout();
+            this.pnlLunchWeek2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -179,6 +179,7 @@
             this.btnLunch.TabIndex = 3;
             this.btnLunch.Text = "Lunch";
             this.btnLunch.UseVisualStyleBackColor = true;
+            this.btnLunch.Click += new System.EventHandler(this.btnLunch_Click);
             // 
             // lblCheeseRolls
             // 
@@ -599,6 +600,16 @@
             this.btnMinusSandwichBeef.Text = "-";
             this.btnMinusSandwichBeef.UseVisualStyleBackColor = true;
             // 
+            // btnPlusCheeseRoll
+            // 
+            this.btnPlusCheeseRoll.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
+            this.btnPlusCheeseRoll.Location = new System.Drawing.Point(390, 16);
+            this.btnPlusCheeseRoll.Name = "btnPlusCheeseRoll";
+            this.btnPlusCheeseRoll.Size = new System.Drawing.Size(14, 15);
+            this.btnPlusCheeseRoll.TabIndex = 40;
+            this.btnPlusCheeseRoll.Text = "+";
+            this.btnPlusCheeseRoll.UseVisualStyleBackColor = true;
+            // 
             // btnMinusCheesePuff
             // 
             this.btnMinusCheesePuff.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
@@ -608,6 +619,16 @@
             this.btnMinusCheesePuff.TabIndex = 60;
             this.btnMinusCheesePuff.Text = "-";
             this.btnMinusCheesePuff.UseVisualStyleBackColor = true;
+            // 
+            // btnPlusSavouryPinwheel
+            // 
+            this.btnPlusSavouryPinwheel.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
+            this.btnPlusSavouryPinwheel.Location = new System.Drawing.Point(390, 33);
+            this.btnPlusSavouryPinwheel.Name = "btnPlusSavouryPinwheel";
+            this.btnPlusSavouryPinwheel.Size = new System.Drawing.Size(14, 15);
+            this.btnPlusSavouryPinwheel.TabIndex = 41;
+            this.btnPlusSavouryPinwheel.Text = "+";
+            this.btnPlusSavouryPinwheel.UseVisualStyleBackColor = true;
             // 
             // btnMinusBrownie
             // 
@@ -619,6 +640,16 @@
             this.btnMinusBrownie.Text = "-";
             this.btnMinusBrownie.UseVisualStyleBackColor = true;
             // 
+            // btnPlusMuffinSavoury
+            // 
+            this.btnPlusMuffinSavoury.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
+            this.btnPlusMuffinSavoury.Location = new System.Drawing.Point(390, 50);
+            this.btnPlusMuffinSavoury.Name = "btnPlusMuffinSavoury";
+            this.btnPlusMuffinSavoury.Size = new System.Drawing.Size(14, 15);
+            this.btnPlusMuffinSavoury.TabIndex = 42;
+            this.btnPlusMuffinSavoury.Text = "+";
+            this.btnPlusMuffinSavoury.UseVisualStyleBackColor = true;
+            // 
             // btnMinusCinnamonSwirl
             // 
             this.btnMinusCinnamonSwirl.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
@@ -628,6 +659,16 @@
             this.btnMinusCinnamonSwirl.TabIndex = 58;
             this.btnMinusCinnamonSwirl.Text = "-";
             this.btnMinusCinnamonSwirl.UseVisualStyleBackColor = true;
+            // 
+            // btnPlusMuffinSweet
+            // 
+            this.btnPlusMuffinSweet.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
+            this.btnPlusMuffinSweet.Location = new System.Drawing.Point(390, 67);
+            this.btnPlusMuffinSweet.Name = "btnPlusMuffinSweet";
+            this.btnPlusMuffinSweet.Size = new System.Drawing.Size(14, 15);
+            this.btnPlusMuffinSweet.TabIndex = 43;
+            this.btnPlusMuffinSweet.Text = "+";
+            this.btnPlusMuffinSweet.UseVisualStyleBackColor = true;
             // 
             // btnMinusMuffinSweet
             // 
@@ -639,6 +680,16 @@
             this.btnMinusMuffinSweet.Text = "-";
             this.btnMinusMuffinSweet.UseVisualStyleBackColor = true;
             // 
+            // btnPlusCinnamonSwirl
+            // 
+            this.btnPlusCinnamonSwirl.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
+            this.btnPlusCinnamonSwirl.Location = new System.Drawing.Point(390, 84);
+            this.btnPlusCinnamonSwirl.Name = "btnPlusCinnamonSwirl";
+            this.btnPlusCinnamonSwirl.Size = new System.Drawing.Size(14, 15);
+            this.btnPlusCinnamonSwirl.TabIndex = 44;
+            this.btnPlusCinnamonSwirl.Text = "+";
+            this.btnPlusCinnamonSwirl.UseVisualStyleBackColor = true;
+            // 
             // btnMinusMuffinSavoury
             // 
             this.btnMinusMuffinSavoury.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
@@ -648,6 +699,16 @@
             this.btnMinusMuffinSavoury.TabIndex = 56;
             this.btnMinusMuffinSavoury.Text = "-";
             this.btnMinusMuffinSavoury.UseVisualStyleBackColor = true;
+            // 
+            // btnPlusBrownie
+            // 
+            this.btnPlusBrownie.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
+            this.btnPlusBrownie.Location = new System.Drawing.Point(390, 101);
+            this.btnPlusBrownie.Name = "btnPlusBrownie";
+            this.btnPlusBrownie.Size = new System.Drawing.Size(14, 15);
+            this.btnPlusBrownie.TabIndex = 45;
+            this.btnPlusBrownie.Text = "+";
+            this.btnPlusBrownie.UseVisualStyleBackColor = true;
             // 
             // btnMinusSavouryPinwheel
             // 
@@ -659,6 +720,16 @@
             this.btnMinusSavouryPinwheel.Text = "-";
             this.btnMinusSavouryPinwheel.UseVisualStyleBackColor = true;
             // 
+            // btnPlusCheesePuff
+            // 
+            this.btnPlusCheesePuff.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
+            this.btnPlusCheesePuff.Location = new System.Drawing.Point(390, 118);
+            this.btnPlusCheesePuff.Name = "btnPlusCheesePuff";
+            this.btnPlusCheesePuff.Size = new System.Drawing.Size(14, 15);
+            this.btnPlusCheesePuff.TabIndex = 46;
+            this.btnPlusCheesePuff.Text = "+";
+            this.btnPlusCheesePuff.UseVisualStyleBackColor = true;
+            // 
             // btnMinusCheeseRoll
             // 
             this.btnMinusCheeseRoll.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
@@ -668,6 +739,16 @@
             this.btnMinusCheeseRoll.TabIndex = 54;
             this.btnMinusCheeseRoll.Text = "-";
             this.btnMinusCheeseRoll.UseVisualStyleBackColor = true;
+            // 
+            // btnPlusSandwichBeef
+            // 
+            this.btnPlusSandwichBeef.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
+            this.btnPlusSandwichBeef.Location = new System.Drawing.Point(390, 152);
+            this.btnPlusSandwichBeef.Name = "btnPlusSandwichBeef";
+            this.btnPlusSandwichBeef.Size = new System.Drawing.Size(14, 15);
+            this.btnPlusSandwichBeef.TabIndex = 47;
+            this.btnPlusSandwichBeef.Text = "+";
+            this.btnPlusSandwichBeef.UseVisualStyleBackColor = true;
             // 
             // btnPlusBagelTomato
             // 
@@ -679,6 +760,16 @@
             this.btnPlusBagelTomato.Text = "+";
             this.btnPlusBagelTomato.UseVisualStyleBackColor = true;
             // 
+            // btnPlusSandwichHam
+            // 
+            this.btnPlusSandwichHam.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
+            this.btnPlusSandwichHam.Location = new System.Drawing.Point(390, 169);
+            this.btnPlusSandwichHam.Name = "btnPlusSandwichHam";
+            this.btnPlusSandwichHam.Size = new System.Drawing.Size(14, 15);
+            this.btnPlusSandwichHam.TabIndex = 48;
+            this.btnPlusSandwichHam.Text = "+";
+            this.btnPlusSandwichHam.UseVisualStyleBackColor = true;
+            // 
             // btnPlusBagelSalmon
             // 
             this.btnPlusBagelSalmon.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
@@ -688,6 +779,16 @@
             this.btnPlusBagelSalmon.TabIndex = 52;
             this.btnPlusBagelSalmon.Text = "+";
             this.btnPlusBagelSalmon.UseVisualStyleBackColor = true;
+            // 
+            // btnPlusSandwichBacon
+            // 
+            this.btnPlusSandwichBacon.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
+            this.btnPlusSandwichBacon.Location = new System.Drawing.Point(390, 186);
+            this.btnPlusSandwichBacon.Name = "btnPlusSandwichBacon";
+            this.btnPlusSandwichBacon.Size = new System.Drawing.Size(14, 15);
+            this.btnPlusSandwichBacon.TabIndex = 49;
+            this.btnPlusSandwichBacon.Text = "+";
+            this.btnPlusSandwichBacon.UseVisualStyleBackColor = true;
             // 
             // btnPlusSandwichChicken
             // 
@@ -708,106 +809,6 @@
             this.btnPlusSandwichEgg.TabIndex = 50;
             this.btnPlusSandwichEgg.Text = "+";
             this.btnPlusSandwichEgg.UseVisualStyleBackColor = true;
-            // 
-            // btnPlusSandwichBacon
-            // 
-            this.btnPlusSandwichBacon.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
-            this.btnPlusSandwichBacon.Location = new System.Drawing.Point(390, 186);
-            this.btnPlusSandwichBacon.Name = "btnPlusSandwichBacon";
-            this.btnPlusSandwichBacon.Size = new System.Drawing.Size(14, 15);
-            this.btnPlusSandwichBacon.TabIndex = 49;
-            this.btnPlusSandwichBacon.Text = "+";
-            this.btnPlusSandwichBacon.UseVisualStyleBackColor = true;
-            // 
-            // btnPlusSandwichHam
-            // 
-            this.btnPlusSandwichHam.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
-            this.btnPlusSandwichHam.Location = new System.Drawing.Point(390, 169);
-            this.btnPlusSandwichHam.Name = "btnPlusSandwichHam";
-            this.btnPlusSandwichHam.Size = new System.Drawing.Size(14, 15);
-            this.btnPlusSandwichHam.TabIndex = 48;
-            this.btnPlusSandwichHam.Text = "+";
-            this.btnPlusSandwichHam.UseVisualStyleBackColor = true;
-            // 
-            // btnPlusSandwichBeef
-            // 
-            this.btnPlusSandwichBeef.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
-            this.btnPlusSandwichBeef.Location = new System.Drawing.Point(390, 152);
-            this.btnPlusSandwichBeef.Name = "btnPlusSandwichBeef";
-            this.btnPlusSandwichBeef.Size = new System.Drawing.Size(14, 15);
-            this.btnPlusSandwichBeef.TabIndex = 47;
-            this.btnPlusSandwichBeef.Text = "+";
-            this.btnPlusSandwichBeef.UseVisualStyleBackColor = true;
-            // 
-            // btnPlusCheesePuff
-            // 
-            this.btnPlusCheesePuff.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
-            this.btnPlusCheesePuff.Location = new System.Drawing.Point(390, 118);
-            this.btnPlusCheesePuff.Name = "btnPlusCheesePuff";
-            this.btnPlusCheesePuff.Size = new System.Drawing.Size(14, 15);
-            this.btnPlusCheesePuff.TabIndex = 46;
-            this.btnPlusCheesePuff.Text = "+";
-            this.btnPlusCheesePuff.UseVisualStyleBackColor = true;
-            // 
-            // btnPlusBrownie
-            // 
-            this.btnPlusBrownie.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
-            this.btnPlusBrownie.Location = new System.Drawing.Point(390, 101);
-            this.btnPlusBrownie.Name = "btnPlusBrownie";
-            this.btnPlusBrownie.Size = new System.Drawing.Size(14, 15);
-            this.btnPlusBrownie.TabIndex = 45;
-            this.btnPlusBrownie.Text = "+";
-            this.btnPlusBrownie.UseVisualStyleBackColor = true;
-            // 
-            // btnPlusCinnamonSwirl
-            // 
-            this.btnPlusCinnamonSwirl.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
-            this.btnPlusCinnamonSwirl.Location = new System.Drawing.Point(390, 84);
-            this.btnPlusCinnamonSwirl.Name = "btnPlusCinnamonSwirl";
-            this.btnPlusCinnamonSwirl.Size = new System.Drawing.Size(14, 15);
-            this.btnPlusCinnamonSwirl.TabIndex = 44;
-            this.btnPlusCinnamonSwirl.Text = "+";
-            this.btnPlusCinnamonSwirl.UseVisualStyleBackColor = true;
-            // 
-            // btnPlusMuffinSweet
-            // 
-            this.btnPlusMuffinSweet.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
-            this.btnPlusMuffinSweet.Location = new System.Drawing.Point(390, 67);
-            this.btnPlusMuffinSweet.Name = "btnPlusMuffinSweet";
-            this.btnPlusMuffinSweet.Size = new System.Drawing.Size(14, 15);
-            this.btnPlusMuffinSweet.TabIndex = 43;
-            this.btnPlusMuffinSweet.Text = "+";
-            this.btnPlusMuffinSweet.UseVisualStyleBackColor = true;
-            // 
-            // btnPlusMuffinSavoury
-            // 
-            this.btnPlusMuffinSavoury.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
-            this.btnPlusMuffinSavoury.Location = new System.Drawing.Point(390, 50);
-            this.btnPlusMuffinSavoury.Name = "btnPlusMuffinSavoury";
-            this.btnPlusMuffinSavoury.Size = new System.Drawing.Size(14, 15);
-            this.btnPlusMuffinSavoury.TabIndex = 42;
-            this.btnPlusMuffinSavoury.Text = "+";
-            this.btnPlusMuffinSavoury.UseVisualStyleBackColor = true;
-            // 
-            // btnPlusSavouryPinwheel
-            // 
-            this.btnPlusSavouryPinwheel.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
-            this.btnPlusSavouryPinwheel.Location = new System.Drawing.Point(390, 33);
-            this.btnPlusSavouryPinwheel.Name = "btnPlusSavouryPinwheel";
-            this.btnPlusSavouryPinwheel.Size = new System.Drawing.Size(14, 15);
-            this.btnPlusSavouryPinwheel.TabIndex = 41;
-            this.btnPlusSavouryPinwheel.Text = "+";
-            this.btnPlusSavouryPinwheel.UseVisualStyleBackColor = true;
-            // 
-            // btnPlusCheeseRoll
-            // 
-            this.btnPlusCheeseRoll.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
-            this.btnPlusCheeseRoll.Location = new System.Drawing.Point(390, 16);
-            this.btnPlusCheeseRoll.Name = "btnPlusCheeseRoll";
-            this.btnPlusCheeseRoll.Size = new System.Drawing.Size(14, 15);
-            this.btnPlusCheeseRoll.TabIndex = 40;
-            this.btnPlusCheeseRoll.Text = "+";
-            this.btnPlusCheeseRoll.UseVisualStyleBackColor = true;
             // 
             // grpBoxLunch
             // 
@@ -1067,6 +1068,45 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Lunch Week 2";
             // 
+            // btnMinusWeek2BeefBurger
+            // 
+            this.btnMinusWeek2BeefBurger.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
+            this.btnMinusWeek2BeefBurger.Location = new System.Drawing.Point(344, 118);
+            this.btnMinusWeek2BeefBurger.Name = "btnMinusWeek2BeefBurger";
+            this.btnMinusWeek2BeefBurger.Size = new System.Drawing.Size(14, 15);
+            this.btnMinusWeek2BeefBurger.TabIndex = 72;
+            this.btnMinusWeek2BeefBurger.Text = "-";
+            this.btnMinusWeek2BeefBurger.UseVisualStyleBackColor = true;
+            // 
+            // btnPlusWeek2BeefBurger
+            // 
+            this.btnPlusWeek2BeefBurger.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
+            this.btnPlusWeek2BeefBurger.Location = new System.Drawing.Point(389, 118);
+            this.btnPlusWeek2BeefBurger.Name = "btnPlusWeek2BeefBurger";
+            this.btnPlusWeek2BeefBurger.Size = new System.Drawing.Size(14, 15);
+            this.btnPlusWeek2BeefBurger.TabIndex = 71;
+            this.btnPlusWeek2BeefBurger.Text = "+";
+            this.btnPlusWeek2BeefBurger.UseVisualStyleBackColor = true;
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(364, 121);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(19, 13);
+            this.label33.TabIndex = 70;
+            this.label33.Text = "$5";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label32.Location = new System.Drawing.Point(9, 119);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(280, 34);
+            this.label32.TabIndex = 69;
+            this.label32.Text = "Friday - Beef burger with tomato relish and \r\ncheese\r\n";
+            // 
             // btnMinusWeek2ChickenBurger
             // 
             this.btnMinusWeek2ChickenBurger.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
@@ -1262,16 +1302,17 @@
             this.label31.TabIndex = 4;
             this.label31.Text = "Monday - Chicken nuggets with oven baked chips";
             // 
-            // comboBox1
+            // listLunchWeekList
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.listLunchWeekList.FormattingEnabled = true;
+            this.listLunchWeekList.Items.AddRange(new object[] {
             "Week 1",
             "Week 2"});
-            this.comboBox1.Location = new System.Drawing.Point(278, 137);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 38;
+            this.listLunchWeekList.Location = new System.Drawing.Point(278, 137);
+            this.listLunchWeekList.Name = "listLunchWeekList";
+            this.listLunchWeekList.Size = new System.Drawing.Size(121, 21);
+            this.listLunchWeekList.TabIndex = 38;
+            this.listLunchWeekList.SelectedIndexChanged += new System.EventHandler(this.listLunchWeekList_SelectedIndexChanged);
             // 
             // btnInterval
             // 
@@ -1281,45 +1322,7 @@
             this.btnInterval.TabIndex = 39;
             this.btnInterval.Text = "Interval";
             this.btnInterval.UseVisualStyleBackColor = true;
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label32.Location = new System.Drawing.Point(9, 119);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(280, 34);
-            this.label32.TabIndex = 69;
-            this.label32.Text = "Friday - Beef burger with tomato relish and \r\ncheese\r\n";
-            // 
-            // btnMinusWeek2BeefBurger
-            // 
-            this.btnMinusWeek2BeefBurger.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
-            this.btnMinusWeek2BeefBurger.Location = new System.Drawing.Point(344, 118);
-            this.btnMinusWeek2BeefBurger.Name = "btnMinusWeek2BeefBurger";
-            this.btnMinusWeek2BeefBurger.Size = new System.Drawing.Size(14, 15);
-            this.btnMinusWeek2BeefBurger.TabIndex = 72;
-            this.btnMinusWeek2BeefBurger.Text = "-";
-            this.btnMinusWeek2BeefBurger.UseVisualStyleBackColor = true;
-            // 
-            // btnPlusWeek2BeefBurger
-            // 
-            this.btnPlusWeek2BeefBurger.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
-            this.btnPlusWeek2BeefBurger.Location = new System.Drawing.Point(389, 118);
-            this.btnPlusWeek2BeefBurger.Name = "btnPlusWeek2BeefBurger";
-            this.btnPlusWeek2BeefBurger.Size = new System.Drawing.Size(14, 15);
-            this.btnPlusWeek2BeefBurger.TabIndex = 71;
-            this.btnPlusWeek2BeefBurger.Text = "+";
-            this.btnPlusWeek2BeefBurger.UseVisualStyleBackColor = true;
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(364, 121);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(19, 13);
-            this.label33.TabIndex = 70;
-            this.label33.Text = "$5";
+            this.btnInterval.Click += new System.EventHandler(this.btnInterval_Click);
             // 
             // pnlInterval
             // 
@@ -1329,21 +1332,21 @@
             this.pnlInterval.Size = new System.Drawing.Size(415, 301);
             this.pnlInterval.TabIndex = 40;
             // 
-            // panel1
+            // pnlLunchWeek1
             // 
-            this.panel1.Controls.Add(this.grpBoxLunch);
-            this.panel1.Location = new System.Drawing.Point(15, 162);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(415, 301);
-            this.panel1.TabIndex = 41;
+            this.pnlLunchWeek1.Controls.Add(this.grpBoxLunch);
+            this.pnlLunchWeek1.Location = new System.Drawing.Point(15, 162);
+            this.pnlLunchWeek1.Name = "pnlLunchWeek1";
+            this.pnlLunchWeek1.Size = new System.Drawing.Size(415, 301);
+            this.pnlLunchWeek1.TabIndex = 41;
             // 
-            // panel2
+            // pnlLunchWeek2
             // 
-            this.panel2.Controls.Add(this.groupBox1);
-            this.panel2.Location = new System.Drawing.Point(15, 162);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(415, 301);
-            this.panel2.TabIndex = 42;
+            this.pnlLunchWeek2.Controls.Add(this.groupBox1);
+            this.pnlLunchWeek2.Location = new System.Drawing.Point(15, 162);
+            this.pnlLunchWeek2.Name = "pnlLunchWeek2";
+            this.pnlLunchWeek2.Size = new System.Drawing.Size(415, 301);
+            this.pnlLunchWeek2.TabIndex = 42;
             // 
             // Form1
             // 
@@ -1352,13 +1355,13 @@
             this.BackColor = System.Drawing.Color.ForestGreen;
             this.ClientSize = new System.Drawing.Size(442, 473);
             this.Controls.Add(this.btnInterval);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.listLunchWeekList);
             this.Controls.Add(this.btnLunch);
             this.Controls.Add(this.picBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnlInterval);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.pnlLunchWeek2);
+            this.Controls.Add(this.pnlLunchWeek1);
             this.Name = "Form1";
             this.Text = "Bayfield Highschool Canteen Menu";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -1370,8 +1373,8 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.pnlInterval.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
+            this.pnlLunchWeek1.ResumeLayout(false);
+            this.pnlLunchWeek2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1435,7 +1438,7 @@
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox listLunchWeekList;
         private System.Windows.Forms.Button btnInterval;
         private System.Windows.Forms.Button btnPlusSavouryPinwheel;
         private System.Windows.Forms.Button btnPlusCheeseRoll;
@@ -1490,8 +1493,8 @@
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Panel pnlInterval;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel pnlLunchWeek1;
+        private System.Windows.Forms.Panel pnlLunchWeek2;
     }
 }
 
