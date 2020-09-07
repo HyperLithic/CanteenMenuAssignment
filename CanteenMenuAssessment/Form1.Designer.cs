@@ -141,6 +141,7 @@
             this.pnlInterval = new System.Windows.Forms.Panel();
             this.pnlLunchWeek1 = new System.Windows.Forms.Panel();
             this.pnlLunchWeek2 = new System.Windows.Forms.Panel();
+            this.lblOrder = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picBox1)).BeginInit();
             this.grpBoxInterval.SuspendLayout();
             this.grpBoxLunch.SuspendLayout();
@@ -539,6 +540,7 @@
             this.btnMinusBagelTomato.TabIndex = 67;
             this.btnMinusBagelTomato.Text = "-";
             this.btnMinusBagelTomato.UseVisualStyleBackColor = true;
+            this.btnMinusBagelTomato.Click += new System.EventHandler(this.downArrowClicked);
             // 
             // btnMinusBagelSalmon
             // 
@@ -549,6 +551,7 @@
             this.btnMinusBagelSalmon.TabIndex = 66;
             this.btnMinusBagelSalmon.Text = "-";
             this.btnMinusBagelSalmon.UseVisualStyleBackColor = true;
+            this.btnMinusBagelSalmon.Click += new System.EventHandler(this.downArrowClicked);
             // 
             // btnMinusSandwichChicken
             // 
@@ -559,6 +562,7 @@
             this.btnMinusSandwichChicken.TabIndex = 65;
             this.btnMinusSandwichChicken.Text = "-";
             this.btnMinusSandwichChicken.UseVisualStyleBackColor = true;
+            this.btnMinusSandwichChicken.Click += new System.EventHandler(this.downArrowClicked);
             // 
             // btnMinusSandwichEgg
             // 
@@ -569,6 +573,7 @@
             this.btnMinusSandwichEgg.TabIndex = 64;
             this.btnMinusSandwichEgg.Text = "-";
             this.btnMinusSandwichEgg.UseVisualStyleBackColor = true;
+            this.btnMinusSandwichEgg.Click += new System.EventHandler(this.downArrowClicked);
             // 
             // btnMinusSandwichBacon
             // 
@@ -579,6 +584,7 @@
             this.btnMinusSandwichBacon.TabIndex = 63;
             this.btnMinusSandwichBacon.Text = "-";
             this.btnMinusSandwichBacon.UseVisualStyleBackColor = true;
+            this.btnMinusSandwichBacon.Click += new System.EventHandler(this.downArrowClicked);
             // 
             // btnMinusSandwichHam
             // 
@@ -589,6 +595,7 @@
             this.btnMinusSandwichHam.TabIndex = 62;
             this.btnMinusSandwichHam.Text = "-";
             this.btnMinusSandwichHam.UseVisualStyleBackColor = true;
+            this.btnMinusSandwichHam.Click += new System.EventHandler(this.downArrowClicked);
             // 
             // btnMinusSandwichBeef
             // 
@@ -599,6 +606,7 @@
             this.btnMinusSandwichBeef.TabIndex = 61;
             this.btnMinusSandwichBeef.Text = "-";
             this.btnMinusSandwichBeef.UseVisualStyleBackColor = true;
+            this.btnMinusSandwichBeef.Click += new System.EventHandler(this.downArrowClicked);
             // 
             // btnPlusCheeseRoll
             // 
@@ -609,6 +617,7 @@
             this.btnPlusCheeseRoll.TabIndex = 40;
             this.btnPlusCheeseRoll.Text = "+";
             this.btnPlusCheeseRoll.UseVisualStyleBackColor = true;
+            this.btnPlusCheeseRoll.Click += new System.EventHandler(this.upArrowClicked);
             // 
             // btnMinusCheesePuff
             // 
@@ -619,6 +628,7 @@
             this.btnMinusCheesePuff.TabIndex = 60;
             this.btnMinusCheesePuff.Text = "-";
             this.btnMinusCheesePuff.UseVisualStyleBackColor = true;
+            this.btnMinusCheesePuff.Click += new System.EventHandler(this.downArrowClicked);
             // 
             // btnPlusSavouryPinwheel
             // 
@@ -629,6 +639,7 @@
             this.btnPlusSavouryPinwheel.TabIndex = 41;
             this.btnPlusSavouryPinwheel.Text = "+";
             this.btnPlusSavouryPinwheel.UseVisualStyleBackColor = true;
+            this.btnPlusSavouryPinwheel.Click += new System.EventHandler(this.upArrowClicked);
             // 
             // btnMinusBrownie
             // 
@@ -639,6 +650,7 @@
             this.btnMinusBrownie.TabIndex = 59;
             this.btnMinusBrownie.Text = "-";
             this.btnMinusBrownie.UseVisualStyleBackColor = true;
+            this.btnMinusBrownie.Click += new System.EventHandler(this.downArrowClicked);
             // 
             // btnPlusMuffinSavoury
             // 
@@ -649,6 +661,7 @@
             this.btnPlusMuffinSavoury.TabIndex = 42;
             this.btnPlusMuffinSavoury.Text = "+";
             this.btnPlusMuffinSavoury.UseVisualStyleBackColor = true;
+            this.btnPlusMuffinSavoury.Click += new System.EventHandler(this.upArrowClicked);
             // 
             // btnMinusCinnamonSwirl
             // 
@@ -659,6 +672,7 @@
             this.btnMinusCinnamonSwirl.TabIndex = 58;
             this.btnMinusCinnamonSwirl.Text = "-";
             this.btnMinusCinnamonSwirl.UseVisualStyleBackColor = true;
+            this.btnMinusCinnamonSwirl.Click += new System.EventHandler(this.downArrowClicked);
             // 
             // btnPlusMuffinSweet
             // 
@@ -669,6 +683,7 @@
             this.btnPlusMuffinSweet.TabIndex = 43;
             this.btnPlusMuffinSweet.Text = "+";
             this.btnPlusMuffinSweet.UseVisualStyleBackColor = true;
+            this.btnPlusMuffinSweet.Click += new System.EventHandler(this.upArrowClicked);
             // 
             // btnMinusMuffinSweet
             // 
@@ -679,6 +694,7 @@
             this.btnMinusMuffinSweet.TabIndex = 57;
             this.btnMinusMuffinSweet.Text = "-";
             this.btnMinusMuffinSweet.UseVisualStyleBackColor = true;
+            this.btnMinusMuffinSweet.Click += new System.EventHandler(this.downArrowClicked);
             // 
             // btnPlusCinnamonSwirl
             // 
@@ -689,6 +705,7 @@
             this.btnPlusCinnamonSwirl.TabIndex = 44;
             this.btnPlusCinnamonSwirl.Text = "+";
             this.btnPlusCinnamonSwirl.UseVisualStyleBackColor = true;
+            this.btnPlusCinnamonSwirl.Click += new System.EventHandler(this.upArrowClicked);
             // 
             // btnMinusMuffinSavoury
             // 
@@ -699,6 +716,7 @@
             this.btnMinusMuffinSavoury.TabIndex = 56;
             this.btnMinusMuffinSavoury.Text = "-";
             this.btnMinusMuffinSavoury.UseVisualStyleBackColor = true;
+            this.btnMinusMuffinSavoury.Click += new System.EventHandler(this.downArrowClicked);
             // 
             // btnPlusBrownie
             // 
@@ -709,6 +727,7 @@
             this.btnPlusBrownie.TabIndex = 45;
             this.btnPlusBrownie.Text = "+";
             this.btnPlusBrownie.UseVisualStyleBackColor = true;
+            this.btnPlusBrownie.Click += new System.EventHandler(this.upArrowClicked);
             // 
             // btnMinusSavouryPinwheel
             // 
@@ -719,6 +738,7 @@
             this.btnMinusSavouryPinwheel.TabIndex = 55;
             this.btnMinusSavouryPinwheel.Text = "-";
             this.btnMinusSavouryPinwheel.UseVisualStyleBackColor = true;
+            this.btnMinusSavouryPinwheel.Click += new System.EventHandler(this.downArrowClicked);
             // 
             // btnPlusCheesePuff
             // 
@@ -729,6 +749,7 @@
             this.btnPlusCheesePuff.TabIndex = 46;
             this.btnPlusCheesePuff.Text = "+";
             this.btnPlusCheesePuff.UseVisualStyleBackColor = true;
+            this.btnPlusCheesePuff.Click += new System.EventHandler(this.upArrowClicked);
             // 
             // btnMinusCheeseRoll
             // 
@@ -739,6 +760,7 @@
             this.btnMinusCheeseRoll.TabIndex = 54;
             this.btnMinusCheeseRoll.Text = "-";
             this.btnMinusCheeseRoll.UseVisualStyleBackColor = true;
+            this.btnMinusCheeseRoll.Click += new System.EventHandler(this.downArrowClicked);
             // 
             // btnPlusSandwichBeef
             // 
@@ -749,6 +771,7 @@
             this.btnPlusSandwichBeef.TabIndex = 47;
             this.btnPlusSandwichBeef.Text = "+";
             this.btnPlusSandwichBeef.UseVisualStyleBackColor = true;
+            this.btnPlusSandwichBeef.Click += new System.EventHandler(this.upArrowClicked);
             // 
             // btnPlusBagelTomato
             // 
@@ -759,6 +782,7 @@
             this.btnPlusBagelTomato.TabIndex = 53;
             this.btnPlusBagelTomato.Text = "+";
             this.btnPlusBagelTomato.UseVisualStyleBackColor = true;
+            this.btnPlusBagelTomato.Click += new System.EventHandler(this.upArrowClicked);
             // 
             // btnPlusSandwichHam
             // 
@@ -769,6 +793,7 @@
             this.btnPlusSandwichHam.TabIndex = 48;
             this.btnPlusSandwichHam.Text = "+";
             this.btnPlusSandwichHam.UseVisualStyleBackColor = true;
+            this.btnPlusSandwichHam.Click += new System.EventHandler(this.upArrowClicked);
             // 
             // btnPlusBagelSalmon
             // 
@@ -779,6 +804,7 @@
             this.btnPlusBagelSalmon.TabIndex = 52;
             this.btnPlusBagelSalmon.Text = "+";
             this.btnPlusBagelSalmon.UseVisualStyleBackColor = true;
+            this.btnPlusBagelSalmon.Click += new System.EventHandler(this.upArrowClicked);
             // 
             // btnPlusSandwichBacon
             // 
@@ -789,6 +815,7 @@
             this.btnPlusSandwichBacon.TabIndex = 49;
             this.btnPlusSandwichBacon.Text = "+";
             this.btnPlusSandwichBacon.UseVisualStyleBackColor = true;
+            this.btnPlusSandwichBacon.Click += new System.EventHandler(this.upArrowClicked);
             // 
             // btnPlusSandwichChicken
             // 
@@ -799,6 +826,7 @@
             this.btnPlusSandwichChicken.TabIndex = 51;
             this.btnPlusSandwichChicken.Text = "+";
             this.btnPlusSandwichChicken.UseVisualStyleBackColor = true;
+            this.btnPlusSandwichChicken.Click += new System.EventHandler(this.upArrowClicked);
             // 
             // btnPlusSandwichEgg
             // 
@@ -809,6 +837,7 @@
             this.btnPlusSandwichEgg.TabIndex = 50;
             this.btnPlusSandwichEgg.Text = "+";
             this.btnPlusSandwichEgg.UseVisualStyleBackColor = true;
+            this.btnPlusSandwichEgg.Click += new System.EventHandler(this.upArrowClicked);
             // 
             // grpBoxLunch
             // 
@@ -1348,12 +1377,22 @@
             this.pnlLunchWeek2.Size = new System.Drawing.Size(415, 301);
             this.pnlLunchWeek2.TabIndex = 42;
             // 
+            // lblOrder
+            // 
+            this.lblOrder.AutoSize = true;
+            this.lblOrder.Location = new System.Drawing.Point(26, 466);
+            this.lblOrder.Name = "lblOrder";
+            this.lblOrder.Size = new System.Drawing.Size(72, 13);
+            this.lblOrder.TabIndex = 43;
+            this.lblOrder.Text = "Your order is: ";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.ForestGreen;
-            this.ClientSize = new System.Drawing.Size(442, 473);
+            this.ClientSize = new System.Drawing.Size(442, 486);
+            this.Controls.Add(this.lblOrder);
             this.Controls.Add(this.btnInterval);
             this.Controls.Add(this.listLunchWeekList);
             this.Controls.Add(this.btnLunch);
@@ -1495,6 +1534,7 @@
         private System.Windows.Forms.Panel pnlInterval;
         private System.Windows.Forms.Panel pnlLunchWeek1;
         private System.Windows.Forms.Panel pnlLunchWeek2;
+        private System.Windows.Forms.Label lblOrder;
     }
 }
 

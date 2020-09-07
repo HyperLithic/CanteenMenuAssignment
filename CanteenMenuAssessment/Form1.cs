@@ -12,16 +12,22 @@ namespace CanteenMenuAssessment
 {
     public partial class Form1 : Form
     {
-        List<Panel> listPanel = new List<Panel>();
-        string[] arrayIntervalFood = new string[] { "Cheese Rolls", "Savoury Pinwheel", "Savoury Muffin", "Sweet Muffin", "Cinnamon Swirl", "Brownie", "Cheese Puffs", "Beef Sandwich", "Ham Sandwich", "Bacon Sandwich", "Vegetarian Sandwich", "Chicken Sandbwich", "Salmon Bagel", "Tomato Bagel"};
-        int index;
-        int lunch;
-        int week = 1;
         public Form1()
         {
             InitializeComponent();
-            
+
         }
+        List<Panel> listPanel = new List<Panel>();
+        int[] arrayIntervalPrice = new int[] {4, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4};
+        string[] arrayIntervalUpButtons = new string[] { "btnPlusCheeseRoll", "btnPlusSavouryPinwheel", "btnPlusMuffinSavoury", "btnPlusMuffinSweet", "btnPlusCinnamonSwirl", "btnPlusBrownie", "btnPlusCheesePuff", "btnPlusSandwichBeef", "btnPlusSandwichHam", "btnPlusSandwichBacon", "btnPlusSandwichEgg", "btnPlusSandwichChicken", "btnPlusBagelSalmon", "btnPlusBagelTomato" };
+        string[] arrayIntervalDownButtons = new string[] { "btnMinusCheeseRoll", "btnMinusSavouryPinwheel", "btnMinusMuffinSavoury", "btnMinusMuffinSweet", "btnMinusCinnamonSwirl", "btnMinusBrownie", "btnMinusCheesePuff", "btnMinusSandwichBeef", "btnMinusSandwichHam", "btnMinusSandwichBacon", "btnMinusSandwichEgg", "btnMinusSandwichChicken", "btnMinusBagelSalmon", "btnMinusBagelTomato" };
+        string[] arrayIntervalFood = new string[] { "Cheese Rolls", "Savoury Pinwheel", "Savoury Muffin", "Sweet Muffin", "Cinnamon Swirl", "Brownie", "Cheese Puffs", "Beef Sandwich", "Ham Sandwich", "Bacon Sandwich", "Vegetarian Sandwich", "Chicken Sandbwich", "Salmon Bagel", "Tomato Bagel" };
+        int itemsAdded = 0;
+        List<int> itemsAddedList = new List<int>();
+        int lunch;
+        int week = 1;
+        //readonly string 
+        
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -34,8 +40,12 @@ namespace CanteenMenuAssessment
             listPanel.Add(pnlLunchWeek1);
             listPanel.Add(pnlLunchWeek2);
             listPanel[0].BringToFront();
+            //Console.WriteLine(arrayIntervalDownButtons.Length);
+            //Console.WriteLine(arrayIntervalUpButtons.Length);
+            //Console.WriteLine(arrayIntervalPrice.Length);
+            //Console.WriteLine(arrayIntervalFood.Length);
 
-            lis
+
         }
 
         private void lblCheesePuffs_Click(object sender, EventArgs e)
@@ -98,6 +108,71 @@ namespace CanteenMenuAssessment
             else if (listLunchWeekList.GetItemText(listLunchWeekList.SelectedItem) == "Week 2" && lunch == 0)
             {
                 week = 2;
+            }
+        }
+
+        public int CalcAddedIntervalItem(string argsSender)
+        {
+            int index = -1;
+            for (int i = 0; i < arrayIntervalDownButtons.Length; i++)
+            {
+                if (arrayIntervalUpButtons[i] == argsSender)
+                {
+                    index = i;
+                    break;
+                }
+            }
+            return index;
+        }
+        public int CalcRemovedIntervalItem(string argsSender)
+        {
+            int index = -1;
+            for (int i = 0; i < arrayIntervalUpButtons.Length; i++)
+            {
+                if (arrayIntervalDownButtons[i] == argsSender)
+                {
+                    index = i;
+                    break;
+                }
+            }
+            return index;
+        }
+        private void upArrowClicked(object sender, EventArgs e)
+        {
+            if (itemsAdded <= 3)
+            {
+                itemsAdded++;
+                string stringIntervalUpButton = (sender as Button).Name;
+                int intIntervalUpButton = CalcAddedIntervalItem(stringIntervalUpButton);
+                itemsAddedList.Add(intIntervalUpButton);
+                lblOrder.Text = "Your order is: ";
+                for (int i = 0; i < itemsAddedList.Count; i++)
+                {
+                    int item = itemsAddedList[i];
+                    lblOrder.Text += arrayIntervalFood[item] + " $" + arrayIntervalPrice[item] + " ";
+                }
+            }
+        }
+
+        private void downArrowClicked(object sender, EventArgs e)
+        {
+            if (itemsAdded >= 1)
+            {
+                string stringIntervalDownButton = (sender as Button).Name;
+                int intIntervalDownButton = CalcRemovedIntervalItem(stringIntervalDownButton);
+                itemsAddedList.Remove(intIntervalDownButton);
+                itemsAdded = itemsAddedList.Count;
+                lblOrder.Text = "Your order is: ";
+                if (itemsAddedList.Count >= 1)
+                {
+                    for (int i = 0; i < itemsAddedList.Count; i++)
+                    {
+                        int item = itemsAddedList[i];
+                        lblOrder.Text += arrayIntervalFood[item] + " $" + arrayIntervalPrice[item] + " ";
+                    }
+
+                }
+
             }
         }
     }
