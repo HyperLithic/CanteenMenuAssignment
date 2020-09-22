@@ -518,11 +518,11 @@
             this.grpBoxInterval.Controls.Add(this.lblBagels);
             this.grpBoxInterval.Controls.Add(this.btnPlusBagelSalmon);
             this.grpBoxInterval.Controls.Add(this.btnPlusSandwichBacon);
-            this.grpBoxInterval.Controls.Add(this.lblSandwichOptions);
             this.grpBoxInterval.Controls.Add(this.lblBagelOptions);
             this.grpBoxInterval.Controls.Add(this.btnPlusSandwichChicken);
             this.grpBoxInterval.Controls.Add(this.btnPlusSandwichEgg);
             this.grpBoxInterval.Controls.Add(this.lblSandwichs);
+            this.grpBoxInterval.Controls.Add(this.lblSandwichOptions);
             this.grpBoxInterval.Location = new System.Drawing.Point(0, 3);
             this.grpBoxInterval.Name = "grpBoxInterval";
             this.grpBoxInterval.Size = new System.Drawing.Size(414, 295);
@@ -878,6 +878,7 @@
             this.btnMinusWeek1FriedRice.TabIndex = 63;
             this.btnMinusWeek1FriedRice.Text = "-";
             this.btnMinusWeek1FriedRice.UseVisualStyleBackColor = true;
+            this.btnMinusWeek1FriedRice.Click += new System.EventHandler(this.Lunch1DownArrowClicked);
             // 
             // btnPlusWeek1FriedRice
             // 
@@ -888,6 +889,7 @@
             this.btnPlusWeek1FriedRice.TabIndex = 58;
             this.btnPlusWeek1FriedRice.Text = "+";
             this.btnPlusWeek1FriedRice.UseVisualStyleBackColor = true;
+            this.btnPlusWeek1FriedRice.Click += new System.EventHandler(this.Lunch1UpArrowClicked);
             // 
             // btnMinusWeek1ButterChicken
             // 
@@ -898,6 +900,7 @@
             this.btnMinusWeek1ButterChicken.TabIndex = 62;
             this.btnMinusWeek1ButterChicken.Text = "-";
             this.btnMinusWeek1ButterChicken.UseVisualStyleBackColor = true;
+            this.btnMinusWeek1ButterChicken.Click += new System.EventHandler(this.Lunch1DownArrowClicked);
             // 
             // label26
             // 
@@ -917,6 +920,7 @@
             this.btnMinusWeek1Macaroni.TabIndex = 61;
             this.btnMinusWeek1Macaroni.Text = "-";
             this.btnMinusWeek1Macaroni.UseVisualStyleBackColor = true;
+            this.btnMinusWeek1Macaroni.Click += new System.EventHandler(this.Lunch1DownArrowClicked);
             // 
             // btnPlusWeek1ButterChicken
             // 
@@ -927,6 +931,7 @@
             this.btnPlusWeek1ButterChicken.TabIndex = 57;
             this.btnPlusWeek1ButterChicken.Text = "+";
             this.btnPlusWeek1ButterChicken.UseVisualStyleBackColor = true;
+            this.btnPlusWeek1ButterChicken.Click += new System.EventHandler(this.Lunch1UpArrowClicked);
             // 
             // btnMinusWeek1Pumpkin
             // 
@@ -937,6 +942,7 @@
             this.btnMinusWeek1Pumpkin.TabIndex = 60;
             this.btnMinusWeek1Pumpkin.Text = "-";
             this.btnMinusWeek1Pumpkin.UseVisualStyleBackColor = true;
+            this.btnMinusWeek1Pumpkin.Click += new System.EventHandler(this.Lunch1DownArrowClicked);
             // 
             // btnMinusWeek1ChickenNuggets
             // 
@@ -947,6 +953,7 @@
             this.btnMinusWeek1ChickenNuggets.TabIndex = 59;
             this.btnMinusWeek1ChickenNuggets.Text = "-";
             this.btnMinusWeek1ChickenNuggets.UseVisualStyleBackColor = true;
+            this.btnMinusWeek1ChickenNuggets.Click += new System.EventHandler(this.Lunch1DownArrowClicked);
             // 
             // label27
             // 
@@ -966,6 +973,7 @@
             this.btnPlusWeek1Macaroni.TabIndex = 56;
             this.btnPlusWeek1Macaroni.Text = "+";
             this.btnPlusWeek1Macaroni.UseVisualStyleBackColor = true;
+            this.btnPlusWeek1Macaroni.Click += new System.EventHandler(this.Lunch1UpArrowClicked);
             // 
             // btnPlusWeek1Pumpkin
             // 
@@ -976,6 +984,7 @@
             this.btnPlusWeek1Pumpkin.TabIndex = 55;
             this.btnPlusWeek1Pumpkin.Text = "+";
             this.btnPlusWeek1Pumpkin.UseVisualStyleBackColor = true;
+            this.btnPlusWeek1Pumpkin.Click += new System.EventHandler(this.Lunch1UpArrowClicked);
             // 
             // label28
             // 
@@ -995,6 +1004,7 @@
             this.btnPlusWeek1ChickenNuggets.TabIndex = 54;
             this.btnPlusWeek1ChickenNuggets.Text = "+";
             this.btnPlusWeek1ChickenNuggets.UseVisualStyleBackColor = true;
+            this.btnPlusWeek1ChickenNuggets.Click += new System.EventHandler(this.Lunch1UpArrowClicked);
             // 
             // label29
             // 
@@ -1106,6 +1116,7 @@
             this.btnMinusWeek2BeefBurger.TabIndex = 72;
             this.btnMinusWeek2BeefBurger.Text = "-";
             this.btnMinusWeek2BeefBurger.UseVisualStyleBackColor = true;
+            this.btnMinusWeek2BeefBurger.Click += new System.EventHandler(this.Lunch2DownArrowClicked);
             // 
             // btnPlusWeek2BeefBurger
             // 
@@ -1116,6 +1127,7 @@
             this.btnPlusWeek2BeefBurger.TabIndex = 71;
             this.btnPlusWeek2BeefBurger.Text = "+";
             this.btnPlusWeek2BeefBurger.UseVisualStyleBackColor = true;
+            this.btnPlusWeek2BeefBurger.Click += new System.EventHandler(this.Lunch2UpArrowClicked);
             // 
             // label33
             // 
@@ -1145,6 +1157,7 @@
             this.btnMinusWeek2ChickenBurger.TabIndex = 68;
             this.btnMinusWeek2ChickenBurger.Text = "-";
             this.btnMinusWeek2ChickenBurger.UseVisualStyleBackColor = true;
+            this.btnMinusWeek2ChickenBurger.Click += new System.EventHandler(this.Lunch2DownArrowClicked);
             // 
             // btnMinusWeek2Meatballs
             // 
@@ -1155,6 +1168,7 @@
             this.btnMinusWeek2Meatballs.TabIndex = 67;
             this.btnMinusWeek2Meatballs.Text = "-";
             this.btnMinusWeek2Meatballs.UseVisualStyleBackColor = true;
+            this.btnMinusWeek2Meatballs.Click += new System.EventHandler(this.Lunch2DownArrowClicked);
             // 
             // btnMinusWeek2Lasagne
             // 
@@ -1165,6 +1179,7 @@
             this.btnMinusWeek2Lasagne.TabIndex = 66;
             this.btnMinusWeek2Lasagne.Text = "-";
             this.btnMinusWeek2Lasagne.UseVisualStyleBackColor = true;
+            this.btnMinusWeek2Lasagne.Click += new System.EventHandler(this.Lunch2DownArrowClicked);
             // 
             // btnMinusWeek2BaconPie
             // 
@@ -1175,6 +1190,7 @@
             this.btnMinusWeek2BaconPie.TabIndex = 65;
             this.btnMinusWeek2BaconPie.Text = "-";
             this.btnMinusWeek2BaconPie.UseVisualStyleBackColor = true;
+            this.btnMinusWeek2BaconPie.Click += new System.EventHandler(this.Lunch2DownArrowClicked);
             // 
             // btnMinusWeek2ChickenNuggets
             // 
@@ -1185,6 +1201,7 @@
             this.btnMinusWeek2ChickenNuggets.TabIndex = 64;
             this.btnMinusWeek2ChickenNuggets.Text = "-";
             this.btnMinusWeek2ChickenNuggets.UseVisualStyleBackColor = true;
+            this.btnMinusWeek2ChickenNuggets.Click += new System.EventHandler(this.Lunch2DownArrowClicked);
             // 
             // btnPlusWeek2ChickenBurger
             // 
@@ -1195,6 +1212,7 @@
             this.btnPlusWeek2ChickenBurger.TabIndex = 63;
             this.btnPlusWeek2ChickenBurger.Text = "+";
             this.btnPlusWeek2ChickenBurger.UseVisualStyleBackColor = true;
+            this.btnPlusWeek2ChickenBurger.Click += new System.EventHandler(this.Lunch2UpArrowClicked);
             // 
             // label17
             // 
@@ -1214,6 +1232,7 @@
             this.btnPlusWeek2Meatballs.TabIndex = 62;
             this.btnPlusWeek2Meatballs.Text = "+";
             this.btnPlusWeek2Meatballs.UseVisualStyleBackColor = true;
+            this.btnPlusWeek2Meatballs.Click += new System.EventHandler(this.Lunch2UpArrowClicked);
             // 
             // label18
             // 
@@ -1233,6 +1252,7 @@
             this.btnPlusWeek2Lasagne.TabIndex = 61;
             this.btnPlusWeek2Lasagne.Text = "+";
             this.btnPlusWeek2Lasagne.UseVisualStyleBackColor = true;
+            this.btnPlusWeek2Lasagne.Click += new System.EventHandler(this.Lunch2UpArrowClicked);
             // 
             // btnPlusWeek2BaconPie
             // 
@@ -1243,6 +1263,7 @@
             this.btnPlusWeek2BaconPie.TabIndex = 60;
             this.btnPlusWeek2BaconPie.Text = "+";
             this.btnPlusWeek2BaconPie.UseVisualStyleBackColor = true;
+            this.btnPlusWeek2BaconPie.Click += new System.EventHandler(this.Lunch2UpArrowClicked);
             // 
             // label19
             // 
@@ -1262,6 +1283,7 @@
             this.btnPlusWeek2ChickenNuggets.TabIndex = 59;
             this.btnPlusWeek2ChickenNuggets.Text = "+";
             this.btnPlusWeek2ChickenNuggets.UseVisualStyleBackColor = true;
+            this.btnPlusWeek2ChickenNuggets.Click += new System.EventHandler(this.Lunch2UpArrowClicked);
             // 
             // label20
             // 
@@ -1380,9 +1402,10 @@
             // lblOrder
             // 
             this.lblOrder.AutoSize = true;
+            this.lblOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
             this.lblOrder.Location = new System.Drawing.Point(26, 466);
             this.lblOrder.Name = "lblOrder";
-            this.lblOrder.Size = new System.Drawing.Size(72, 13);
+            this.lblOrder.Size = new System.Drawing.Size(53, 9);
             this.lblOrder.TabIndex = 43;
             this.lblOrder.Text = "Your order is: ";
             // 
