@@ -18,6 +18,7 @@ namespace CanteenMenuAssessment
 
         }
         List<Panel> listPanel = new List<Panel>();
+        string[] tutorGroups = new string[] { "ABh","AJf", "AHb", "AWa", "BSa", "Bla", "BRi", "BGw", "HKa", "HMl", "HMd", "HKi", "RWt", "RTh", "RHr", "RBn", "SMn", "SRo", "SDg", "SDa" };   
         int[] arrayIntervalPrice = new int[] { 4, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4 };
         string[] arrayIntervalUpButtons = new string[] { "btnPlusCheeseRoll", "btnPlusSavouryPinwheel", "btnPlusMuffinSavoury", "btnPlusMuffinSweet", "btnPlusCinnamonSwirl", "btnPlusBrownie", "btnPlusCheesePuff", "btnPlusSandwichBeef", "btnPlusSandwichHam", "btnPlusSandwichBacon", "btnPlusSandwichEgg", "btnPlusSandwichChicken", "btnPlusBagelSalmon", "btnPlusBagelTomato" };
         string[] arrayIntervalDownButtons = new string[] { "btnMinusCheeseRoll", "btnMinusSavouryPinwheel", "btnMinusMuffinSavoury", "btnMinusMuffinSweet", "btnMinusCinnamonSwirl", "btnMinusBrownie", "btnMinusCheesePuff", "btnMinusSandwichBeef", "btnMinusSandwichHam", "btnMinusSandwichBacon", "btnMinusSandwichEgg", "btnMinusSandwichChicken", "btnMinusBagelSalmon", "btnMinusBagelTomato" };
@@ -41,10 +42,7 @@ namespace CanteenMenuAssessment
         int totalPrice = 0;
 
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -57,8 +55,10 @@ namespace CanteenMenuAssessment
             Console.WriteLine(arrayLunchWeek2UpButtons.Length);
             Console.WriteLine(arrayLunchWeek2Price.Length);
             Console.WriteLine(arrayLunchWeek2Food.Length);
-
-
+            for (int i = 0; i < tutorGroups.Length; i++)
+            {
+                cmbTutorClass.Items.Add(tutorGroups[i]);
+            }
         }
 
         private void lblCheesePuffs_Click(object sender, EventArgs e)
@@ -85,6 +85,12 @@ namespace CanteenMenuAssessment
         {
             lunch = 0;
             listPanel[0].BringToFront();
+            Lunch1ItemsAddedList.Clear();
+            Lunch2ItemsAddedList.Clear();
+            itemsAdded = 0;
+            Lunch1ItemsAdded = 0;
+            Lunch2ItemsAdded = 0;
+            lblOrder.Text = "Your order is: ";
         }
 
         private void btnLunch_Click(object sender, EventArgs e)
@@ -93,11 +99,24 @@ namespace CanteenMenuAssessment
             if (week == 1)
             {
                 listPanel[1].BringToFront();
-
+                itemsAddedList.Clear();
+                Lunch2ItemsAddedList.Clear();
+                Lunch1ItemsAddedList.Clear();
+                itemsAdded = 0;
+                Lunch1ItemsAdded = 0;
+                Lunch2ItemsAdded = 0;
+                lblOrder.Text = "Your order is: ";
             }
             else if (week == 2)
             {
                 listPanel[2].BringToFront();
+                itemsAddedList.Clear();
+                Lunch1ItemsAddedList.Clear();
+                Lunch2ItemsAddedList.Clear();
+                itemsAdded = 0;
+                Lunch1ItemsAdded = 0;
+                Lunch2ItemsAdded = 0;
+                lblOrder.Text = "Your order is: ";
             }
 
         }
@@ -108,11 +127,25 @@ namespace CanteenMenuAssessment
             {
                 week = 1;
                 listPanel[1].BringToFront();
+                itemsAddedList.Clear();
+                Lunch2ItemsAddedList.Clear();
+                Lunch1ItemsAddedList.Clear();
+                itemsAdded = 0;
+                Lunch1ItemsAdded = 0;
+                Lunch2ItemsAdded = 0;
+                lblOrder.Text = "Your order is: ";
             }
             else if (listLunchWeekList.GetItemText(listLunchWeekList.SelectedItem) == "Week 2" && lunch == 1)
             {
                 week = 2;
                 listPanel[2].BringToFront();
+                itemsAddedList.Clear();
+                Lunch1ItemsAddedList.Clear();
+                Lunch2ItemsAddedList.Clear();
+                itemsAdded = 0;
+                Lunch1ItemsAdded = 0;
+                Lunch2ItemsAdded = 0;
+                lblOrder.Text = "Your order is: ";
             }
             else if (listLunchWeekList.GetItemText(listLunchWeekList.SelectedItem) == "Week 1" && lunch == 0)
             {

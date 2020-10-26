@@ -142,6 +142,14 @@
             this.pnlLunchWeek1 = new System.Windows.Forms.Panel();
             this.pnlLunchWeek2 = new System.Windows.Forms.Panel();
             this.lblOrder = new System.Windows.Forms.Label();
+            this.btnDone = new System.Windows.Forms.Button();
+            this.grpBoxInformation = new System.Windows.Forms.GroupBox();
+            this.btnConfirmOrder = new System.Windows.Forms.Button();
+            this.cmbTutorClass = new System.Windows.Forms.ComboBox();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.pnlFillOut = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.picBox1)).BeginInit();
             this.grpBoxInterval.SuspendLayout();
             this.grpBoxLunch.SuspendLayout();
@@ -149,6 +157,8 @@
             this.pnlInterval.SuspendLayout();
             this.pnlLunchWeek1.SuspendLayout();
             this.pnlLunchWeek2.SuspendLayout();
+            this.grpBoxInformation.SuspendLayout();
+            this.pnlFillOut.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -1409,12 +1419,108 @@
             this.lblOrder.TabIndex = 43;
             this.lblOrder.Text = "Your order is: ";
             // 
+            // btnDone
+            // 
+            this.btnDone.Location = new System.Drawing.Point(390, 466);
+            this.btnDone.Name = "btnDone";
+            this.btnDone.Size = new System.Drawing.Size(30, 26);
+            this.btnDone.TabIndex = 44;
+            this.btnDone.Text = "✓";
+            this.btnDone.UseVisualStyleBackColor = true;
+            // 
+            // grpBoxInformation
+            // 
+            this.grpBoxInformation.Controls.Add(this.btnConfirmOrder);
+            this.grpBoxInformation.Controls.Add(this.cmbTutorClass);
+            this.grpBoxInformation.Controls.Add(this.txtName);
+            this.grpBoxInformation.Controls.Add(this.label35);
+            this.grpBoxInformation.Controls.Add(this.label34);
+            this.grpBoxInformation.Location = new System.Drawing.Point(3, 3);
+            this.grpBoxInformation.Name = "grpBoxInformation";
+            this.grpBoxInformation.Size = new System.Drawing.Size(412, 299);
+            this.grpBoxInformation.TabIndex = 68;
+            this.grpBoxInformation.TabStop = false;
+            this.grpBoxInformation.Text = "Fill out information";
+            // 
+            // btnConfirmOrder
+            // 
+            this.btnConfirmOrder.Location = new System.Drawing.Point(67, 84);
+            this.btnConfirmOrder.Name = "btnConfirmOrder";
+            this.btnConfirmOrder.Size = new System.Drawing.Size(75, 23);
+            this.btnConfirmOrder.TabIndex = 74;
+            this.btnConfirmOrder.Text = "Confirm";
+            this.btnConfirmOrder.UseVisualStyleBackColor = true;
+            // 
+            // cmbTutorClass
+            // 
+            this.cmbTutorClass.FormattingEnabled = true;
+            this.cmbTutorClass.Items.AddRange(new object[] {
+            "ABh",
+            "AJf",
+            "AHb",
+            "AWa",
+            "BSa",
+            "Bla",
+            "BRi",
+            "BGw",
+            "HKa",
+            "HMl",
+            "HMd",
+            "HKi",
+            "RWt",
+            "RTh",
+            "RHr",
+            "RBn",
+            "SMn",
+            "SRo",
+            "SDg",
+            "SDa"});
+            this.cmbTutorClass.Location = new System.Drawing.Point(67, 48);
+            this.cmbTutorClass.Name = "cmbTutorClass";
+            this.cmbTutorClass.Size = new System.Drawing.Size(121, 21);
+            this.cmbTutorClass.TabIndex = 73;
+            // 
+            // txtName
+            // 
+            this.txtName.Location = new System.Drawing.Point(43, 15);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(100, 20);
+            this.txtName.TabIndex = 72;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(6, 52);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(66, 13);
+            this.label35.TabIndex = 71;
+            this.label35.Text = "Tutor Class: ";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(6, 18);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(41, 13);
+            this.label34.TabIndex = 70;
+            this.label34.Text = "Name: ";
+            // 
+            // pnlFillOut
+            // 
+            this.pnlFillOut.Controls.Add(this.grpBoxInformation);
+            this.pnlFillOut.Location = new System.Drawing.Point(13, 161);
+            this.pnlFillOut.Name = "pnlFillOut";
+            this.pnlFillOut.Size = new System.Drawing.Size(418, 302);
+            this.pnlFillOut.TabIndex = 69;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.ForestGreen;
-            this.ClientSize = new System.Drawing.Size(442, 486);
+            this.ClientSize = new System.Drawing.Size(444, 498);
+            this.Controls.Add(this.pnlFillOut);
+            this.Controls.Add(this.btnDone);
             this.Controls.Add(this.lblOrder);
             this.Controls.Add(this.btnInterval);
             this.Controls.Add(this.listLunchWeekList);
@@ -1437,6 +1543,9 @@
             this.pnlInterval.ResumeLayout(false);
             this.pnlLunchWeek1.ResumeLayout(false);
             this.pnlLunchWeek2.ResumeLayout(false);
+            this.grpBoxInformation.ResumeLayout(false);
+            this.grpBoxInformation.PerformLayout();
+            this.pnlFillOut.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1558,6 +1667,14 @@
         private System.Windows.Forms.Panel pnlLunchWeek1;
         private System.Windows.Forms.Panel pnlLunchWeek2;
         private System.Windows.Forms.Label lblOrder;
+        private System.Windows.Forms.Button btnDone;
+        private System.Windows.Forms.GroupBox grpBoxInformation;
+        private System.Windows.Forms.ComboBox cmbTutorClass;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Panel pnlFillOut;
+        private System.Windows.Forms.Button btnConfirmOrder;
     }
 }
 
